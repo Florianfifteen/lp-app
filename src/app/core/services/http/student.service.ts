@@ -11,7 +11,7 @@ export class StudentService {
   }
 
   get(): Observable<Student []>{
-    return this._httpClient.get("http://localhost:4200/student");
+    return this._httpClient.get<Student[]>("http://localhost:4200/student");
   }
 
   
